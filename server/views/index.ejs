@@ -10,16 +10,16 @@
       
     </div>
   </main>
-  <% if (title == "About Me") { %>
-  <%include about_me.ejs %>
+ <% if (title == "About Me") { %>
+   <%- include partials/about_me.ejs %>
   <%}else if (title == "Home"){ %>
-  <% include home.ejs %>
+  <% include partials/home.ejs %>
   <%}else if (title == "Projects"){ %>
-  <% include Projects.ejs %>
+  <% include ./partials/Projects.ejs %>
   <%}else if (title == "Services"){ %>
-  <% include Services.ejs %>
+  <% include partials/Services.ejs %>
   <%}else if (title == "Contact Me"){ %>
-  <% include Contact.ejs %>
+  <% include partials/Contact.ejs %>
   <%}%>
   
   
